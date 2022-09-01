@@ -13,7 +13,6 @@ import java.util.Set;
 
 @Component
 public interface UserService extends UserDetailsService {
-    long getUsersCount();
     List<User> getUsers();
     Set<UserRole> getRoles();
     String addUser(User user, BindingResult bindingResult);

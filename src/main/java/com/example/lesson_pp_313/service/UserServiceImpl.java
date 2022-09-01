@@ -33,11 +33,6 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public long getUsersCount() {
-        return userDao.count();
-    }
-
-    @Override
     public List<User> getUsers() {
         List<User> users = new ArrayList<>();
         userDao.findAll().forEach(users::add);
